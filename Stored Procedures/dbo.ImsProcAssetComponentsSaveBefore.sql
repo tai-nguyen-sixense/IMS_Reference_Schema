@@ -8,7 +8,8 @@ CREATE PROCEDURE [dbo].[ImsProcAssetComponentsSaveBefore] @Data AssetComponentCh
 AS
 BEGIN
 	BEGIN TRY  
-		select 1;
+		return 1; -- Use return TO NOT SHOW a message to the user
+		-- select 1; -- Use select TO SHOW a message to the user
 	END TRY
 	
 	BEGIN CATCH 
